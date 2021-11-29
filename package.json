@@ -32,7 +32,21 @@
     "trailingComma": "es5"
   },
   "name": "@krunaldodiya/next-api-router",
-  "author": "krunal dodiya",
+  "author": "Krunal Dodiya <kunal.dodiya1@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krunaldodiya/next-api-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krunaldodiya/next-api-router/issues"
+  },
+  "homepage": "https://github.com/krunaldodiya/next-api-router#readme",
+  "keywords": [
+    "next",
+    "nextjs",
+    "route",
+    "router"
+  ],
   "module": "dist/next-api-router.esm.js",
   "size-limit": [
     {
