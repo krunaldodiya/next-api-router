@@ -26,10 +26,17 @@ router
   .create();
 
 router
-  .get('/api/login', (req, res) => {
-    return res.send('test');
+  .post('/api/login', (req, res) => {
+    return res.status(200).send({ token });
   })
   .applyMiddleware(validateLoginSchema)
+  .create();
+
+router
+  .get('/api/me', (req, res) => {
+    return res.status(200).json({ me: req.user });
+  })
+  .applyMiddleware(isAuthenticated)
   .create();
 
 export default router.render();
