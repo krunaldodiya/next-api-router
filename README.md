@@ -115,7 +115,7 @@ const createPostSchema = yup.object().shape({
   description: yup.text().required(),
 });
 
-export default loginSchema;
+export default createPostSchema;
 ```
 
 ```ts
