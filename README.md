@@ -79,7 +79,7 @@ const isAuthenticatedHandler = registerMiddleware(
 );
 
 // this is middleware with selected options
-export const isAuthenticatedMiddleware = isAuthenticatedHandler.setPayload(
+export const isAuthenticated = isAuthenticatedHandler.setPayload(
   (req: NextApiRequest) => {
     return {
       token: req.headers['authorization'],
